@@ -43,7 +43,7 @@ test_quiet_checkpoint_exits_124_cleanly() {
 
 test_perl_timeout_fallback_honors_cleanup_bound_before_escalating() {
   local home fallback_bin tool tool_path status watcher_pid
-  home=$(make_home perl-fallback)
+  home=$(make_home 'perl fallback with spaces')
   fallback_bin="$home/fallback-bin"
   mkdir -p "$home/root/bin" "$fallback_bin"
   cp "$CHECKPOINT" "$home/root/bin/fm-watch-checkpoint.sh"
