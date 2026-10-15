@@ -1,0 +1,21 @@
+Real checkpoint and watcher; executable directory: AI Engineering; PATH has no timeout/gtimeout
+
+SCENARIO quiet exit=124
+checkpoint: no actionable wake within 1s
+remaining watcher pid: 41604
+
+SCENARIO signal exit=0
+signal: /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.checkpoint-live/signal/state/demo.status
+watcher lock released
+Persisted wake queue:
+1792066440	1	signal	demo.status	signal: /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.checkpoint-live/signal/state/demo.status
+1792066440	2	signal	demo.status	signal: /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.checkpoint-live/signal/state/demo.status
+
+SCENARIO singleton exit=1
+watcher: already running pid 40913
+checkpoint: watcher is already running outside this foreground checkpoint
+remaining watcher pid: 40913
+
+SCENARIO before-fix exit=2
+exec failed: No such file or directory
+watcher lock released

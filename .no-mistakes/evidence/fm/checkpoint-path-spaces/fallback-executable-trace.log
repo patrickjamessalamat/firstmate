@@ -1,0 +1,113 @@
++ test_perl_timeout_fallback_honors_cleanup_bound_before_escalating
++ local home fallback_bin tool tool_path status watcher_pid
+++ make_home 'perl fallback with spaces'
+++ local 'name=perl fallback with spaces' home
+++ home='/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces'
+++ mkdir -p '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/state' '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/data' '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/config'
+++ printf '%s\n' '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces'
++ home='/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces'
++ fallback_bin='/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin'
++ mkdir -p '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/root/bin' '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin'
++ cp /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/bin/fm-watch-checkpoint.sh '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/root/bin/fm-watch-checkpoint.sh'
++ cp /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/bin/fm-supervision-engine-lib.sh '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/root/bin/fm-supervision-engine-lib.sh'
++ for tool in bash dirname mktemp rm perl grep cat
+++ command -v bash
++ tool_path=/run/current-system/sw/bin/bash
++ ln -s /run/current-system/sw/bin/bash '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin/bash'
++ for tool in bash dirname mktemp rm perl grep cat
+++ command -v dirname
++ tool_path=/usr/bin/dirname
++ ln -s /usr/bin/dirname '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin/dirname'
++ for tool in bash dirname mktemp rm perl grep cat
+++ command -v mktemp
++ tool_path=/usr/bin/mktemp
++ ln -s /usr/bin/mktemp '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin/mktemp'
++ for tool in bash dirname mktemp rm perl grep cat
+++ command -v rm
++ tool_path=/bin/rm
++ ln -s /bin/rm '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin/rm'
++ for tool in bash dirname mktemp rm perl grep cat
+++ command -v perl
++ tool_path=/usr/bin/perl
++ ln -s /usr/bin/perl '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin/perl'
++ for tool in bash dirname mktemp rm perl grep cat
+++ command -v grep
++ tool_path=/usr/bin/grep
++ ln -s /usr/bin/grep '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin/grep'
++ for tool in bash dirname mktemp rm perl grep cat
+++ command -v cat
++ tool_path=/bin/cat
++ ln -s /bin/cat '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin/cat'
++ cat
++ chmod +x '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/root/bin/fm-watch-checkpoint.sh' '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/root/bin/fm-watch.sh'
++ status=0
++ PATH='/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/fallback-bin'
++ FM_HOME='/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces'
++ FM_POLL=1
++ FM_SIGNAL_GRACE=1
++ FM_WATCHER_CLEANUP_LOCK_BOUND=8
++ '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/root/bin/fm-watch-checkpoint.sh' --seconds 1
++ status=124
++ expect_code 124 124 'Perl fallback checkpoint exit'
++ local expected=124 actual=124 'label=Perl fallback checkpoint exit'
++ '[' 124 = 124 ']'
+++ cat '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/out.txt'
++ assert_contains 'checkpoint: no actionable wake within 1s' 'checkpoint: no actionable wake within 1s' 'Perl fallback did not return a quiet checkpoint'
++ case "$1" in
++ :
++ '[' -e '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/cleanup-reached' ']'
++ '[' '!' -e '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/natural-exit' ']'
++ '[' -s '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/watcher.pid' ']'
+++ cat '/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J/perl fallback with spaces/watcher.pid'
++ watcher_pid=67458
++ kill -0 67458
++ pass 'Perl fallback honors the cleanup bound before escalating an INT-ignoring direct watcher'
++ printf 'ok - %s\n' 'Perl fallback honors the cleanup bound before escalating an INT-ignoring direct watcher'
+ok - Perl fallback honors the cleanup bound before escalating an INT-ignoring direct watcher
++ fm_test_cleanup
++ local d
++ fm_test_reap_watchers
++ local state lock_home $'seen=\n'
++ '[' -f /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/.fm-test-watcher.67392.NHF783 ']'
++ IFS=
++ read -r state
++ rm -f /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/.fm-test-watcher.67392.NHF783
++ fm_test_reap_procevent_homes
++ local home claim_root $'seen=\n'
++ '[' -f /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/.fm-test-procevent.67392.kZ5FGS ']'
++ IFS=$'\t'
++ read -r home claim_root
++ rm -f /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/.fm-test-procevent.67392.kZ5FGS
++ for d in "${FM_TEST_CLEANUP_DIRS[@]:-}"
++ '[' -n '' ']'
++ '[' -f /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/.fm-test-cleanup.67392.6UVAQl ']'
++ IFS=
++ read -r d
++ '[' -n /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wake-tangle-root.tQxOzj ']'
++ fm_test_remove_tree /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wake-tangle-root.tQxOzj
++ local dir=/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wake-tangle-root.tQxOzj
++ '[' -d /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wake-tangle-root.tQxOzj ']'
++ '[' '!' -L /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wake-tangle-root.tQxOzj ']'
++ find /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wake-tangle-root.tQxOzj -type d -exec chmod u+rwx '{}' +
++ rm -rf /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wake-tangle-root.tQxOzj
++ IFS=
++ read -r d
++ '[' -n /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wedge-rec.qKwdZV ']'
++ fm_test_remove_tree /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wedge-rec.qKwdZV
++ local dir=/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wedge-rec.qKwdZV
++ '[' -d /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wedge-rec.qKwdZV ']'
++ '[' '!' -L /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wedge-rec.qKwdZV ']'
++ find /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wedge-rec.qKwdZV -type d -exec chmod u+rwx '{}' +
++ rm -rf /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-wedge-rec.qKwdZV
++ IFS=
++ read -r d
++ '[' -n /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J ']'
++ fm_test_remove_tree /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J
++ local dir=/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J
++ '[' -d /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J ']'
++ '[' '!' -L /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J ']'
++ find /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J -type d -exec chmod u+rwx '{}' +
++ rm -rf /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/fm-watch-checkpoint.xR283J
++ IFS=
++ read -r d
++ rm -f /Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/.fm-test-cleanup.67392.6UVAQl

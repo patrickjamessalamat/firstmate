@@ -1,0 +1,24 @@
+/Users/patrickjamessalamat/.no-mistakes/worktrees/bde443e6804d/01M4ZQDSB2NTE4RKFX4Z96VH3R/.test-tmp/live host with spaces
+lock acquired: harness pid 54910
+
+CASE absent-opt-in: exit=124 elapsed=2s
+checkpoint: no actionable wake within 2s
+lock acquired: harness pid 54910
+
+CASE opted-in-attended-bound: exit=124 elapsed=6s
+checkpoint: no actionable wake within 3s
+1792066930	start	gen=host-68715-1792066929	primary=codex
+1792066932	boundary	after 3s
+lock acquired: harness pid 54910
+
+CASE opted-in-away-raised-bound: exit=124 elapsed=6s
+checkpoint: no actionable wake within 5s
+
+CASE explicit-opt-out-pending-recovery: exit=0 elapsed=0s
+check: rearm-resurface
+
+Actual host ledger:
+1792066933	start	gen=host-69923-1792066933	primary=codex
+1792066939	boundary	after 6s
+
+All live host bounds and opt-in checks succeeded; disposable home removed on exit.

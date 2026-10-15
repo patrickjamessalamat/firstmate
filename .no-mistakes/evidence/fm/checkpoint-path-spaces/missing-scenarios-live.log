@@ -1,0 +1,10 @@
+absent: rc=124 elapsed=2s
+checkpoint: no actionable wake within 1s
+PASS absent
+opted-in: rc=1 elapsed=0s
+supervision-host stood down: this session does not own supervision
+PASS opted-in
+opted-out: rc=124 elapsed=2s
+checkpoint: no actionable wake within 1s
+PASS opted-out
+LIMITATION: tmux absent from PATH; genuine primary bounds/handback not exercised. No installation or alternate primary fabricated.
